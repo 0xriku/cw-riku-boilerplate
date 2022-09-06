@@ -7,7 +7,7 @@ use crate::error::ContractError;
 use crate::msg::{ExecuteMsg, InstantiateMsg};
 use crate::state::{State, STATE};
 
-const CONTRACT_NAME: &str = "crates.io:cw-contract";
+const CONTRACT_NAME: &str = "crates.io:cw-riku-boilerplate";
 const CONTRACT_VERSION: &str = env!("CARGO_PKG_VERSION");
 
 #[cfg_attr(not(feature = "library"), entry_point)]
