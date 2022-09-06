@@ -1,10 +1,10 @@
 [package]
-name = "cw-contract"
+name = "cw-riku-boilerplate"
 version = "0.10.0"
 edition = "2018"
 license = "Apache-2.0"
-description = "Simple CosmWasm contract"
-repository = "https://github.com/0xriku/cw-contract.git"
+description = "SSimple CosmWasm smart contract template"
+repository = "https://github.com/0xriku/cw-riku-boilerplate.git"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

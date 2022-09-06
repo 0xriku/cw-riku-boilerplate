@@ -384,7 +384,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "cw-contract"
+name = "cw-riku-boilerplate"
 version = "0.10.0"
 dependencies = [
  "cosmwasm-schema",
