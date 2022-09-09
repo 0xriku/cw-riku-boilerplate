@@ -48,10 +48,13 @@ pub fn set_data(
   info: MessageInfo,
   data: String,
 ) -> Result<Response, ContractError> {
+  // Acquire mutable reference to storage to update Item located at key "state", made accessible through STATE convenience function defined in state.rs
   STATE.update(deps.storage, |mut state| -> Result<_, ContractError> {
+    // Check that message sender is permitted to invoke this function
     if info.sender != state.owner {
       return Err(ContractError::NotAuthorized {});
     }
+    // Update value of data to value passed in ExecuteMsg::Write
     state.data = data.clone();
     Ok(state)
   })?;
